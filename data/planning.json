@@ -1,0 +1,54 @@
+[
+	{"id":1, "class": "Dev" ,  "weekPeriod":"8janv2012 - 15janv2012" , "day": [
+																				{"name":"lundi", "start": "8:30", "over": "12:30", "profName": "Zira", "subject": "Français" },
+																				{"name":"lundi", "start": "13:30", "over": "15:30", "profName": "Zira", "subject": "Français" },
+																				{"name":"mardi", "start": "09:00", "over": "12:00", "profName": "Ozzy", "subject": "Being dark" },
+																				{"name":"mardi", "start": "13:30", "over": "15:00", "profName": "Zira", "subject": "Français" },
+																				{"name":"mercredi", "start": "8:30", "over": "12:30", "profName": "Zira", "subject": "Français" },
+																				{"name":"mercredi", "start": "13:30", "over": "14:30", "profName": "Yeso", "subject": "Japonais" },
+																				{"name":"jeudi", "start": "8:30", "over": "12:30", "profName": "Ozzy", "subject": "Being rock" },
+																				{"name":"jeudi", "start": "13:30", "over": "12:30", "profName": "Le prof", "subject": "Going back in time" },
+																				{"name":"vendredi", "start": "8:30", "over": "12:30", "profName": "Zira", "subject": "Français" },
+																				{"name":"vendredi", "start": "13:30", "over": "14:30", "profName": "Zira", "subject": "Français" }
+
+																			] 
+
+
+
+},
+	{"id":2, "class": "Dev" ,  "weekPeriod":"16janv2012 - 23janv2012" , "day": [
+																				{"name":"lundi", "start": "8:30", "over": "12:30", "profName": "Zira", "subject": "Français" },
+																				{"name":"lundi", "start": "13:30", "over": "15:30", "profName": "Zira", "subject": "Français" },
+																				{"name":"mardi", "start": "09:00", "over": "12:00", "profName": "Ozzy", "subject": "Being dark" },
+																				{"name":"mardi", "start": "13:30", "over": "15:00", "profName": "Zira", "subject": "Français" },
+																				{"name":"mercredi", "start": "8:30", "over": "12:30", "profName": "Zira", "subject": "Français" },
+																				{"name":"jeudi", "start": "8:30", "over": "12:30", "profName": "Ozzy", "subject": "Being rock" },
+																				{"name":"jeudi", "start": "13:30", "over": "12:30", "profName": "Le prof", "subject": "Going back in time" },
+																				{"name":"vendredi", "start": "8:30", "over": "12:30", "profName": "Zira", "subject": "Français" },
+																				{"name":"vendredi", "start": "13:30", "over": "14:30", "profName": "Zira", "subject": "Français" }
+
+																			] 
+
+
+
+},
+	{"id":3, "class": "Physique" ,  "weekPeriod":"8janv2012 - 15janv2012" , "day": [
+																				{"name":"lundi", "start": "8:30", "over": "12:30", "profName": "Zira", "subject": "Français" },
+																				{"name":"lundi", "start": "13:30", "over": "15:30", "profName": "Zira", "subject": "Français" },
+																				{"name":"mardi", "start": "09:00", "over": "12:00", "profName": "Ozzy", "subject": "Being dark" },
+																				{"name":"mardi", "start": "13:30", "over": "15:00", "profName": "Zira", "subject": "Français" },
+																				{"name":"mercredi", "start": "8:30", "over": "12:30", "profName": "Zira", "subject": "Français" },
+																				{"name":"mercredi", "start": "13:30", "over": "14:30", "profName": "Yeso", "subject": "Japonais" },
+																				{"name":"jeudi", "start": "8:30", "over": "12:30", "profName": "Ozzy", "subject": "Being rock" },
+																				{"name":"jeudi", "start": "13:30", "over": "12:30", "profName": "Le prof", "subject": "Going back in time" },
+																				{"name":"vendredi", "start": "8:30", "over": "12:30", "profName": "Zira", "subject": "Français" },
+																				{"name":"vendredi", "start": "13:30", "over": "14:30", "profName": "Zira", "subject": "Français" }
+
+																			] 
+
+
+
+}
+
+
+]

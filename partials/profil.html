@@ -1,0 +1,9 @@
+<h2 class="profil_title">Gestion de l'utilisateur : {{user.name}}</h2>
+<div>
+	<form ng-submit="changeName(newname)" class="form-inline">
+	<label for="name">
+		Changer de nom : <input type="text" required placeholder="Enter a new name" ng-model="newname"></input>
+		<input type="submit" class="btn btn-success" />
+	</label>
+	</form>
+</div>

@@ -1,0 +1,11 @@
+<h2 class="staff_title_page" >Our staff :</h2>
+
+<input class="staff_search form-control" ng-model="searching" placeholder="Search in our stuff"></input>
+<div ng-repeat="one in staff|filter:searching" class="staff_global_element_container">
+	<div class="staff_element"> 
+		<hr/>
+		<h3 class="staff_name"> {{one.name}} <small> rôle : {{one.type}}</small></h3>
+		<p class="staff_description"><strong> Description :</strong> {{one.description}}</p>
+		<p class="staff_telephone"> Téléphone: {{one.telephone}}</p>
+	</div> 
+</div>

@@ -1,0 +1,15 @@
+<h2 class="news_title"> Publier sur le site </h2>
+
+<form ng-submit="addNews(news); sended=true;" class="form-horizontal">
+	<div class="form-group news_message_title">
+<label for="title"> le titre de la news<input name="title" type="text" ng-model="news.title" required ng-change="sended=false;" class="form-control"></input></label>
+</div>
+<div class="form-group news_message_object">
+<label for="message">Le message à delivrer <textarea name="message" ng-model="news.data" required ng-change="sended=false;" row="5" class="form-control"></textarea> </label>
+</div>
+
+<div class="form-group">
+	<div ng-show="sended" class="news_message bs-callout bs-callout-info">La news au titre : <em>{{news.title}}</em> a été publiée </div>
+	<input type="submit" value="Publier" class="news_sumbit btn btn-success form-control"/>
+</div>
+</form>

@@ -1,0 +1,16 @@
+   
+[
+{"id": 1, "name":"Nathalie", "type":"eleve", "classe": "Physique"},
+{"id": 2, "name":"Michelle",  "type":"eleve", "classe":"Dev"},
+{"id": 3, "name":"Zina",  "type":"prof"},
+{"id": 4, "name":"Tim",  "type":"tuteur",
+            "eleves": [
+                { "id": "1" },
+                { "id": "2" }
+            ]
+        } 
+	
+]
+
+
+			

@@ -1,0 +1,22 @@
+<h2 class="gestion_plannings_title">Planning de la classe : {{classe}}</h2>
+<div ng-repeat="week in weeks" class="gestion_plannings_week">
+	<table class="gestion_plannings_table table table-striped">
+		<caption class="gestion_plannings_caption"> Semaine du <input type="text" ng-model="week.weekPeriod" class="form-input gestion_plannings_weekperiod"> </input>  </caption>
+		<tr class="gestion_plannings_header_row"><th> Jour de la semaine </th> <th> Heure debut </th> <th> Heure fin </th> <th> Nom professeur </th>  <th> Sujet </th>   </tr>
+		<tr ng-repeat="day in week.day" class="gestion_plannings_row">
+			<th> <input type="text" ng-model="day.name" class="form-input gestion_planning_day_name"  ></input> </th>
+		    <td>  <input type="time" ng-model="day.start" class="gestion_planning_day_start form-input"></input> </td>
+		    <td>  <input type="time" ng-model="day.over" class=" gestion_planning_day_over form-input"></input> </td>
+		    <td><input type="text" ng-model="day.profName" class="gestion_planning_day_profName form-input"></input>  </td>
+		    <td> <input type="text" ng-model="day.subject" class=" gestion_planning_day_subject form-input"></input> </td>
+		 </tr>   
+	</table>
+
+
+	<div>
+			<button ng-click="updatePlanning(week);" class="gestion_plannings_update btn btn-primary">Mettre à jour </button>
+	</div> 
+</div>
+
+
+

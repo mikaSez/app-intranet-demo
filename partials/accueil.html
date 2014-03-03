@@ -1,0 +1,61 @@
+
+<h1 class="accueil_title">Bienvenue {{user.name}}</h1>
+<h2 class="accueil_name">Vous êtes : {{user.type}}</h2>
+<h3 class="accueil_formation_follow" ng-show="user.type=='eleve'"> Vous êtes en formation  de {{user.classe}} </h3> 
+<h3 class="accueil_tutelle_follow" ng-show="user.type=='tuteur'"> Vous avez {{user.eleves.length}} élèves à charge. </h3>
+
+<div ng-show="permissions.showAdmin" class="accueil_admin_section">
+  <h3 class="accueil_admin_title">Admin Area</h3>
+    <div>
+       <div class="accueil_admin_link">
+          	<a href='#/news/new/{{user.name}}'  class=" btn btn-outline-inverse"><span>Publier une nouvelle information sur le site.</span> </a>
+       </div>
+       <div class="accueil_admin_link"> 
+          <a href='#/users/new/'  class=" btn btn-outline-inverse"><span>Créer un nouvel utilisateur.</span> </a> 
+      </div>
+      <div class="accueil_admin_link">
+        <a href="#/gestion/eleves"  class=" btn btn-outline-inverse"> <span> Gérer les élèves.</span> </a>
+      </div>
+      <div class="accueil_admin_link">
+        <a href="#/gestion/plannings"  class=" btn btn-outline-inverse"><span> Gérer les plannings.</span> </a>
+      </div>
+    </div>
+</div>
+<div ng-show="permissions.showBasic" class="accueil_basic_section">
+  <h3 class="accueil_basic_title">Basic Info</h3>
+  <div class="accueil_basic_link"> <a href="#/profil/{{user.id}}"class=" btn btn-outline-inverse"><span> Gestion du profil, changer le nom  </span></a>   </div>
+  
+  <div ng-show="user.type=='tuteur'" >
+    <h4 class="accueil_admin_title">Vos élèves : </h4>
+       <div  class="accueil_basic_eleves" ng-repeat="eleve in eleves">
+  			<h5 class="accueil_tutor_eleve_name">Eleve :  {{eleve.name}}</h5>
+
+        <div class="">
+  	  		<a href="#/planning/{{eleve.classe}}"  class="accueil_tutor_eleve_planning btn btn-outline-inverse"> Afficher le planning  </a> 
+        </div>  
+  	  		<div class="">
+            <a href="#/absences/{{eleve.id}}"  class="accueil_tutor_eleve_miss btn btn-outline-inverse"> Montrer les absences </a> 
+        </div>
+      </div>
+  		</div>
+      <div class="accueil_basic_show" ng-show="user.type=='eleve'">
+        <div class="accueil_basic_link">
+      		<a href="#/planning/{{user.classe}}" class=" btn btn-outline-inverse" > <span> Afficher le planning </span></a>  
+      	</div>
+        <div  class="accueil_basic_link" >
+          <a href="#/absences/{{user.id}}"  class=" btn btn-outline-inverse"><span> Montrer les absences </span></a>
+        </div>
+       </div>
+</div>
+<div ng-show="permissions.showHelp" class="accueil_help_section">
+  <h3 class="accueil_help_title">Fil d'actu</h3>
+    	<div ng-repeat="help in helps | orderBy: '-id' " class="accueil_help_news">
+    		<h4 class="accueil_help_news_title">{{help.title}} <small class="accueil_help_news_date"> du : {{help.date}}</small></h4>
+    		<p class="accueil_help_news_data">{{help.data}}</p>
+    		<br/>
+    		<p class="accueil_help_news_autor">{{help.autor}}</p>
+    		<hr/>
+    	</div>
+</div>
+
+

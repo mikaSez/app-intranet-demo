@@ -1,0 +1,15 @@
+<h2 class="gestion_eleve_title"> Gestion des élèves </h2>
+
+
+<div class="input-group gestion_eleve_filtre">
+  <span class="input-group-addon">@</span><input ng-model="filterSchoolar" placeholder="Entrez un nom" class=" form-control" type="search"></input>
+</div>
+
+<div class="gestion_eleve_global">
+	<div ng-repeat="eleve in eleves | filter: filterSchoolar" class="gestion_eleve"> 
+		<h3 class="gestion_eleve_name">Elève:  {{eleve.name}} </h3>
+		<div><a href="#/gestion/eleves/gestionAbsences/{{eleve.id}}"  class="gestion_eleve_miss btn btn-outline-inverse"> Gerer les absences </a></div>
+		<div class=""><a href="#/profil/{{eleve.id}}"  class="gestion_eleve_rename btn btn-outline-inverse"> Renommer </a></div>
+	</div>
+</div>
+

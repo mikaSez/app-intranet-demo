@@ -1,0 +1,13 @@
+   
+[
+{"id": 1, "name":"Zina", "type":"prof", "description": "Teaching french.", "telephone" : "012345679"},
+{"id": 2, "name":"Erik", "type":"prof", "description": "Teaching phisics.", "telephone" : "012345679"},
+{"id": 3,  "name":"Ourok", "type":"administration", "description": "Teaching english and keeping stuff in place.", "telephone" : "012345679"},
+{"id": 4,  "name":"Eloose", "type":"administration", "description": "HR menager.", "telephone" : "012345679"},
+{"id": 5,  "name":"Ozzy", "type":"administration", "description": "Being dark.", "telephone" : "012345679"},
+{"id": 6,  "name":"Bella", "type":"direction", "description": "School direction.", "telephone" : "012345679"},
+{"id": 7,  "name":"Edward", "type":"direction", "description": "School cleaning.", "telephone" : "012345679"}
+]
+
+
+			

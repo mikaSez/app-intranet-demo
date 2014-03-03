@@ -1,0 +1,9 @@
+
+<h1 class="user_title"> Choix d'un utilisateur </h1>
+
+<div ng-repeat="user in users" class="user_connexion">
+		<a ng-href="#accueil/{{user.id}}" class="user_link btn btn-outline-inverse">
+			<span class="user_name">  {{user.name}}</span>
+			<span class="user_type">{{user.type}}</span> 
+		</a>
+</div>

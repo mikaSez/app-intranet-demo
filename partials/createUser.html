@@ -1,0 +1,31 @@
+<h2 class="create_user_title"> Créer un nouvel utilisateur dans le système : </h2>
+<form ng-submit="creerUtilisateur(user);" class="form-horizontal create_user_form">
+<div class="create_user_name form-group"> 
+	<label for="name"> Entrez le nom d'utilisateur <input type="text" placeholder="Le nom de l'utilisateur " name="name" ng-model="user.name" required ng-change="creationDone=false; messageError=false;" class="form-control" ></input> </label>
+	<span ng-show="messageError">Le nom d'utilisateur doit être rempli</span>
+
+</div>
+<div class="create_user_type form-group"> 
+	<label for="userType"> Choisisez le type d'utilisateur 
+		<select  ng-model="user.type"  name="userType" class="form-control">
+			<option value="prof" required selected="true">Professeur ou membre d'administration</option>
+			<option value="tuteur">Tuteur</option>
+			<option value="eleve">Elève</option>
+		</select>
+	 </label>
+</div>
+<div class="form-group create_user_class"> 
+		<label for="classChooser" class="create_user_class"  ng-show="user.type=='eleve'"> Enseignement suivi
+			<select name="classChooser" ng-model="user.classe" class="form-control"> 
+				<option value="Dev"> Développement</option>
+				<option value="Physique">Physique</option>
+		 	</select>
+		 </label><br/>
+	
+</div>
+
+<div class="form-group create_user_class"> 
+		 <div ng-show="creationDone" class="news_message bs-callout bs-callout-info">La creation de l'utilisateur <em >{{name}}</em> s'est bien passée </div>
+		 <input type="submit" class="create_user btn btn-success" value="Créer l'utilisateur"/>
+</div>
+</form>

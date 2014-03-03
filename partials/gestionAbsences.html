@@ -1,0 +1,22 @@
+<h2 class="geston_absences_title"> Les absences de {{user.name}}</h2>
+<div>
+	<form ng-submit="ajouterAbsence(absence);" class="gestion_absences_form form-inline">
+		<h3 class="gestion_absences_add_title"> Ajouter une absence </h3>
+	    <div class="gestion_absences_date form-group"><label for="data"> du : <input type="date" required="true" placeholder="12/10/2012" ng-model="absence.date"  class="form-control" ></input> </label></div>
+	    <div class="gestion_absences_cause form-group"><label for="raison"> raison : <input type="text" required="true" placeholder="Maladie.." ng-model="absence.description"  class="form-control" ></input> </label></div>
+	    <div  class="gestion_absences_duration form-group"><label for="duree"> durée : <input type="text" pattern="\d+"  required="true" placeholder="4" ng-model="absence.nb_hours"  class="form-control" ></input> </label></div>
+	    <div class="gestion_absences_juste form-group"><label for="justifie" > justifié : <input type="checkbox" ng-model="absence.juste"  class="form-control" ></input> </label></div>
+	    <div class="gestion_absences_add form-group"> <input type="submit" value="Ajouter"  class="form-control btn btn-success" ></input></div>
+	</form>
+</div>
+<div>
+	<table ng-show="absences" class="absences_table table table-striped">
+		<caption  class="absences_caption"> Heures d'absence: {{user.totalAbsences}}, justifiés : {{user.totalAbsencesJust}},  non justifiés: {{user.totalAbsences - user.totalAbsencesJust}}</caption>
+		<tr  class="absences_header_row"> <th>date</th> <th> commentaire</th> <th>durée</th><th>Justifiée?</th> <th> Supprimer</th> </tr>
+		<tr ng-repeat="absence in absences | orderBy:'-date':false" class="absences_row absences_row_{{absence.juste}}"> <td>{{absence.date | date:'dd/MM/yyyy' }} </td> <td> {{absence.description}}</td> <td>{{absence.nb_hours}} </td> <td> {{absence.juste}}</td> <td><button ng-click="supprimerAbsence(absence);" class="absence_delete btn btn-danger">Supprimer</button> </td></tr> 
+	</table>
+</div> 
+
+
+
+<div   ng-hide="absences" class="absences_no_absences"> Aucune absence. </div> 

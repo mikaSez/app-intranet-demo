@@ -1,0 +1,5 @@
+<h2 class="gestion_plannings_title"> Veuillez choisir la classe pour modifier les emplois du temps </h2>
+
+<div ng-repeat="clazz in clazzes"  class="gestion_plannings"> 
+	<a href="#gestion/planning/{{clazz.name}}"  class="gestion_plannings_link btn btn-outline-inverse"> <span class="gestion_planning_text">Modifier les emplois du temps de la formation : </span>{{clazz.name}} </a>
+</div> 

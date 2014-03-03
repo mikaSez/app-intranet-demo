@@ -1,0 +1,12 @@
+<h2 class="planning_title">Planning de la classe : {{classe}}</h2>
+<div class="planning_container">
+	<table ng-repeat="week in weeks" class="planning_table table table-striped">
+		<caption class="planning_caption"> Semaine du {{week.weekPeriod}} </caption>
+		<tr class="planning_header_row"><th> Jour de la semaine </th> <th> Heure debut </th> <th> Heure fin </th> <th> Nom professeur </th>  <th> Sujet </th>   </tr>
+		<tr ng-repeat="day in week.day" class="planning_row"><th> {{day.name}} </th> <td> {{day.start}} </td> <td> {{day.over}} </td> <td> {{day.profName}} </td> <td> {{day.subject}} </td> </tr>   
+	</table>
+
+</div>
+
+
+

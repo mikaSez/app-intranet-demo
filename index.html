@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr" ng-app="hitemaApp">
+
+<html ng-app="hitemaApp">
+<head>
+  <meta charset="utf-8" />
+  <title>Hitema app</title>
+
+
+</head>
+<body class="">
+
+  <header>
+    <h1> Little interactive client-side-only application </h1>
+    <p> That imply : <strong style="color:red;">No page refresh </strong> (it's why f5 not working here... I disabled it for your own sake) all your changes will be lost, back/next buttons works just fine.</p>
+    <p> Why ? It's demonstration-purpose-only application :  no data is stored on the server. </p> 
+    <p> To switch between text / graphic modes click here : <button onclick="removeCss();" class=" btn btn-warning">Cliquez moi !</button>
+    <hr class="separator" />
+  </header>
+  <div ng-view class="container"></div>
+
+<hr/>
+<footer><a href="#/accueil/{{user.id}}">Accueil </a> | <a href="#/infos"> Info </a> | <a href="#/staff"> Contact </a> </footer>
+
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">
+     /**
+     * just because
+     */
+     
+        function disableF5(e) { if ((e.which || e.keyCode) == 116) e.preventDefault();  };
+        $(document).on("keydown", disableF5);
+        var css = false;
+        function removeCss(){
+          if(css){
+            $('link[rel=stylesheet]').remove();
+            css=false;
+          }else{
+                    $('head').append('<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">');
+
+              $('head').append('<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">');
+              $('head').append('<link rel="stylesheet" type="text/css" href="css/app.css">');
+                    css=true;
+          }
+        }
+  </script>
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script type="text/javascript" src="lib/angular/angular-animate.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>

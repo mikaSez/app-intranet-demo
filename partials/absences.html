@@ -1,0 +1,9 @@
+<h2 class="absences_title"> Les absences de {{user.name}}</h2>
+
+<table  ng-show="absences" class="absences_table table table-striped">
+	<caption class="absences_caption"> Heures d'absence: {{user.totalAbsences}}, justifiés : {{user.totalAbsencesJust}},  non justifiés: {{user.totalAbsences - user.totalAbsencesJust}}</caption>
+	<tr class="absences_header_row"> <th>date</th> <th> commentaire</th> <th>durée</th><th>Justifiée?</th> </tr> 
+	<tr ng-repeat="absence in absences | orderBy:'-date':false" class="absences_row absences_row_{{absence.juste}}"> <td>{{absence.date}} </td> <td> {{absence.description}}</td> <td>{{absence.nb_hours}} </td> <td> {{absence.juste}}</td></tr> 
+</table> 
+
+<div   ng-hide="absences" class="absences_no_absences"> Aucune absence. </div> 

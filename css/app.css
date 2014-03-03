@@ -1,0 +1,693 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+
+
+.staff_title_page{
+margin-left: 1em;
+text-align: center;
+
+}
+
+.container{
+  min-height: 600px;
+
+}
+
+.staff_search{
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+border-radius: 8px;
+height: 35px;
+width: 200px;
+}
+
+.staff_search:before{
+  content: "Enter the search information:";
+}
+.staff_element{
+  
+margin-left: auto;
+margin-right: auto;
+  width: 40em;
+ color: whitesmoke;
+  text-align: center;
+  text-shadow: 1px 1px 8px black;
+  
+}
+
+.staff_element > hr{
+  border-top: 1px solid #whitesmoke;
+}
+
+.staff_name{
+  font-weight: bold;
+font-size: 35px;
+}
+.staff_name > small{
+  font-size: 65%;
+color: green;
+font-weight: bold;
+}
+.staff_description{
+  
+}
+
+.staff_telephone{
+  font-weight:bold;
+  
+}
+
+
+
+.user_title{
+  font-weight:bold;
+  text-align:center;
+  text-shadow: 1px 1px 2px black;
+  color: whitesmoke;
+}
+
+.user_connexion{
+  
+  margin-top:1em;
+  margin-left:10em;
+  width: 170px;
+  height: 170px;
+  border: 1px solid rgb(254,254,254);
+  box-shadow: 1px 1px 2px black;
+  text-align:center;
+  border-radius: 6px;
+  display: inline-block;
+  overflow: hidden;
+
+}
+
+
+.user_link{
+  width: 100%;
+  height: 100%;
+   padding-top: 65px; 
+  text-shadow: 1px 1px 2px black;
+color: whitesmoke;
+  font-weight: bolder;
+}
+
+.user_name{
+  display:block;
+  margin-bottom: 5px;
+}
+
+.user_name:before{
+  content:"Nom : ";
+}
+
+.user_type{
+  display:block;
+}
+.user_type:before{
+  content:"Compte: ";
+}
+
+.accueil_title{
+ display: inline-block;
+  border-bottom: 3px solid;
+ color: whitesmoke;
+}
+.accueil_name{
+  display: inline-block;
+  margin-left: 4em;
+
+  color: white;
+}
+.accueil_formation_follow:last{
+  color:white;
+}
+.accueil_tutelle_follow{
+  
+}
+.accueil_admin_section{
+
+}
+
+.accueil_admin_title, .accueil_basic_title, .accueil_help_title{
+
+  text-shadow: 1px 1px 2px black;
+  color: whitesmoke;
+}
+.accueil_admin_link, .accueil_basic_link{
+    display: inline-block;
+    height: 170px;
+    width : 170px;
+    border: 1px solid white;
+    /* overflow: hidden; */
+    border-radius:4px;
+    
+}
+
+.accueil_admin_link a, .accueil_basic_link a{
+    text-overflow: clip;
+    /* width: 102px; */
+   
+  width: 100%;
+  height: 100%;
+  text-shadow: 1px 1px 2px black;
+color: whitesmoke;
+  font-weight: bolder;
+     
+vertical-align: middle;
+display: table;
+    height: 100%;
+    width:100%;
+    
+}
+  
+.accueil_admin_link a span,  .accueil_basic_link a span{
+    text-overflow: clip;
+    display:table-cell;
+    /* vertical-align: middle; */
+    height: 100%;
+    white-space: initial;
+    vertical-align: middle;
+}
+
+.accueil_basic_section{
+
+}
+.accueil_basic_profil{
+
+}
+.accueil_basic_eleves{
+
+  margin-top:1em;
+  margin-left:10em;
+  width: 250px;
+  height: 170px;
+  border: 1px solid rgb(254,254,254);
+  box-shadow: 1px 1px 2px black;
+  text-align:center;
+  border-radius: 6px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.accueil_basic_eleves div{
+  height: 67px;
+}
+
+
+
+.accueil_tutor_eleve_name{
+/* text-shadow: 0px 0px 1px whitesmoke; */
+color: #090204;
+font-weight: bold;}
+.accueil_tutor_eleve_planning, .accueil_tutor_eleve_miss{
+
+      width: 100%;
+      height: 67px !important;
+      text-shadow: 1px 1px 2px black;
+      color: whitesmoke;
+      font-weight: bolder;
+      font-size: large;
+      border: 1px solid rgb(254,254,254);
+      box-shadow: 1px 1px 2px black;
+      border-radius: 0px;
+      padding-top: 15px;
+
+}
+.accueil_tutor_eleve_miss{
+
+
+  height: 55px;
+}
+
+.accueil_basic_show{
+    display: inline;
+
+}
+
+.accueil_help_section{
+
+}
+
+.accueil_help_news{
+
+}
+
+.accueil_help_news_title{
+    font-family: fantasy;
+
+    font-size: xx-large;
+}
+.accueil_help_news_date{
+    float: right;
+
+}
+.accueil_help_news_data{
+    font-family: cursive;
+
+    font-size: large;
+    color: azure;
+    font-kerning: inherit;
+    font-variant: small-caps;
+}
+
+.accueil_help_news_autor{
+    font-style: italic;
+
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+.separator{
+
+}
+
+header{
+
+    background-color: #6f5499;
+    text-shadow: 1px 1px 2px black;
+    color: whitesmoke;
+    width: 100% !important;
+    margin: 0px !important;
+    text-align: center;
+    margin-top: -100px;
+
+}
+
+footer{
+
+}
+
+body {
+      background-color: #6f5499;
+      min-height: 800px;
+      min-width: 652px;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+footer > a{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    color: whitesmoke;
+}
+footer > a:hover{
+  font-size: 18px;
+  color: red;
+  text-decoration: none;
+
+}
+.btn-outline-inverse:hover, .btn-outline-inverse:focus, .btn-outline-inverse:active {
+color: #563d7c;
+text-shadow: 3px 1px 1px whitesmoke;
+background-color: #fff;
+border-color: #fff;
+}
+
+
+
+
+.absences_title{
+  color: whitesmoke;
+  text-shadow:1px 1px 1px black;
+}
+.absences_table{
+  margin-top:50px;
+  height:100%;
+}
+.absences_caption{
+  font-size:18px;
+  color:  whitesmoke;
+  text-shadow:1px 1px 1px black;
+  margin-bottom:10px;
+  
+  
+}
+.absences_header_row > th{
+    text-align:center;
+}
+.absences_row{
+  text-align:center;
+}
+
+.absences_row_true > td{
+  background-color: #dff0d8 !important;
+}
+
+
+.absences_row_false > td{
+    background-color: #f2dede ! important;
+}
+
+
+.absences_no_absences{
+    font-size: 60px;
+
+    color: whitesmoke;
+    text-shadow: 1px 0px 2px black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.absence_delete {
+  width: 100%;
+  text-shadow: 0px 0px 1px black;
+  font-weight:bold;
+}
+
+
+.geston_absences_title{
+    
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+}
+
+.gestion_absences_form{
+
+}
+
+
+
+.gestion_absences_form label{
+    color: whitesmoke;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px black;
+}
+.gestion_absences_add_title{
+
+    color: whitesmoke;
+    
+    text-shadow: 1px 1px 1px black;
+}
+
+.gestion_absences_date{
+
+}
+
+.gestion_absences_cause{
+
+}
+
+.gestion_absences_duration{
+
+}
+
+.gestion_absences_juste{
+
+}
+
+.gestion_absences_add{
+  margin-top:22px;
+}
+
+
+.bs-callout {
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 6px solid #eee;
+}
+
+
+.bs-callout-info {
+  background-color: #f4f8fa;
+  border-color: #10B143;
+  text-shadow: 1px 0px 0px black;
+  color: black;
+}
+
+
+.news_title{
+color: whitesmoke;
+text-shadow: 1px 1px 1px black;
+}
+
+.news_message_title{
+
+
+}
+.news_message_object{
+
+
+
+}
+
+.news_message_title label, .news_message_object label{
+  margin-bottom: 5px;
+}
+
+.news_message_title, .news_message_object{
+
+  color: whitesmoke;
+  text-shadow: 0px 0px 1px black;
+}
+
+.news_message_title input, .news_message_object textarea{
+  width:600px;
+  font-size:18px;
+  letter-spacing:1px;
+}
+
+
+.news_message_title input{
+font-weight: bold;
+
+}
+
+.news_message{
+  /* margin-left: -16px; */
+  width: 600px;
+}
+
+.news_message em{
+  color: rgb(150, 25, 150);
+  text-shadow: none;
+  font-weight: bolder;
+}
+
+.news_message_object textarea{
+  height: 200px;
+  
+}
+.news_sumbit{
+  width: 600px;
+}
+
+
+.profil_title{
+
+}
+
+.profil_form{
+
+}
+
+.profil_form input{
+    height: 32px;
+    border-radius: 3px;
+}
+
+.create_user_title{
+  
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px black;
+}
+.create_user_form{
+
+  color: whitesmoke;
+  text-shadow: 0px 0px 1px black;
+}
+
+.create_user_name{
+  
+}
+
+.create_user_form input, .create_user_form select{
+  width:  300px;
+  text-overflow: ellipsis;
+}
+
+.create_user_type{
+
+}
+
+.create_user_class input{
+  width:  300px;
+}
+
+.create_user{
+  
+}
+
+
+.gestion_plannings_title{
+
+  text-shadow: 1px 1px 2px black;
+  color: whitesmoke;
+}
+
+.gestion_plannings{
+
+  
+  margin-top:1em;
+  margin-left:10em;
+  width: 170px;
+  height: 170px;
+  border: 1px solid rgb(254,254,254);
+  box-shadow: 1px 1px 2px black;
+  text-align:center;
+  border-radius: 6px;
+  display: inline-block;
+  overflow: hidden;
+}
+.gestion_plannings_link{
+      width: 100%;
+      height: 100%;
+      padding-top: 59px;
+      text-shadow: 1px 1px 2px black;
+      color: whitesmoke;
+      font-weight: bolder;
+      font-size: xx-large;
+}
+
+.gestion_planning_text{
+  display: none;
+}
+
+
+.gestion_eleve_title{
+  text-shadow: 1px 1px 2px black;
+  color: whitesmoke;
+  text-align:center;
+}
+
+.gestion_eleve_filtre{
+  width:400px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+.gestion_eleve{
+
+  margin-top:1em;
+  margin-left:10em;
+  width: 250px;
+  height: 170px;
+  border: 1px solid rgb(254,254,254);
+  box-shadow: 1px 1px 2px black;
+  text-align:center;
+  border-radius: 6px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.gestion_eleve_name{
+/* text-shadow: 0px 0px 1px whitesmoke; */
+color: #090204;
+font-weight: bold;
+}
+.gestion_eleve_miss, .gestion_eleve_rename{
+      width: 100%;
+      height: 58px;
+      text-shadow: 1px 1px 2px black;
+      color: whitesmoke;
+      font-weight: bolder;
+      font-size: large;
+      border: 1px solid rgb(254,254,254);
+      box-shadow: 1px 1px 2px black;
+      border-radius: 0px;
+      padding-top: 15px
+
+}
+.gestion_eleve_miss{
+  height: 55px;
+}
+
+.gestion_eleve_global{
+
+}
+
+.planning_title{
+  text-shadow: 1px 1px 2px black;
+
+  color: whitesmoke;
+}
+
+.planning_container{
+
+}
+
+.planning_table{
+  text-align:center;
+}
+
+.planning_caption{
+  font-size: 20px;
+  color: whitesmoke;
+  margin: 20px 0px 10px 0px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.planning_header_row th{
+  text-align:center;  
+}
+.planning_row:nth-child(even) td, .planning_row:nth-child(even) th{
+  background-color: rgba(120,120,120,0.8) !important;
+  text-overflow: ellipsis;
+}
+.planning_row th{
+  font-size : 18px;
+  background-color: ;
+}
+
+.gestion_plannings_row:nth-child(even) td, .gestion_plannings_row:nth-child(even) th{
+  background-color: rgba(120,120,120,0.8) !important;
+  text-overflow: ellipsis;
+}
+
+.gestion_plannings_caption{
+  font-size: 18px;
+  color: azure;
+  margin: 20px 0px 10px 0px;
+}
+.gestion_plannings_update{
+  
+}
